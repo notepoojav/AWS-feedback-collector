@@ -5,7 +5,7 @@ A serverless AWS application that captures user feedback through an API, process
 * AWS Lambda [Python]
 * Amazon API Gateway
 * Amazon Dynamo DB
-* Amazon Simple Email Service
+* Amazon Simple Email Service 
 * IAM Roles and Permissions
 * AWS Cloudwwatch [to track log lambda events]
 
@@ -15,7 +15,7 @@ A serverless AWS application that captures user feedback through an API, process
 * Stores the feedback data in DynamoDb.
 * Sends feedback email using Amazon SES.
 
-#How to Deploy?
+# How to Deploy?
 * Create and deploy a Lambda Function. Refer to feedback.py.
 * Assign permissions to access DynamoDB and SES.
 * Create a POST HTTP API with Resource path: /submitFeedback.
@@ -23,5 +23,8 @@ A serverless AWS application that captures user feedback through an API, process
 * Create DynamoDB Table - feedid (String) as primary key.
 * Verify email identity in SES.
 * Set up corresponding IAM Roles.
+
+🔍 Debugging & Monitoring
+Use Cloudwatch Logs groups to check for log events. (useful for debugging)  
 
 
